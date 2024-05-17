@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="./stylesheets/details.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Vehicle Details</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Phone Number</th>
+        <th>Pick Up Date</th>
+        <th>Vehicle Selection</th>
+        <th>Vehicle Make</th>
+      </tr>
+      <% details.forEach(user => { %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.contact %></td>
+        <td><%= user.pickupDate %></td>
+        <td><%= user.vehicleSelection %></td>
+        <td><%= user.vehicleMake %></td>
+        <!-- Assuming you have a vehicleMake field in your user object -->
+      </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>

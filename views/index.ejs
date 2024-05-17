@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle reservation system</title>
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 style="text-align: center; margin: 10px 0 30px 0">
+      TRANSPORT DEPARTMENT, GOVERNMENT OF TAMILNADU
+    </h1>
+    <div class="container">
+      <form action="/reservation" method="POST">
+        <label>Full Name:</label>
+        <input type="text" name="name" required /><br />
+        <label>Contact:</label>
+        <input type="text" name="contact" required /><br />
+        <label>Pickup Date:</label>
+        <input type="date" name="pickupDate" required /><br />
+        <!-- <label>Vehicle type:</label> -->
+        <!-- <input type="text" name="vehicleSelection" required /><br />
+        <label>Vehicle Make:</label>
+        <input type="text" name="vehicleMake" required /><br /> -->
+        <label for="vehicleSelection">Vehicle type:</label>
+        <select id="vehicleSelection" name="vehicleSelection" required>
+          <option value="none" selected disabled hidden>
+            Select an Option
+          </option>
+          <option>Two Wheeler</option>
+          <option>Three Wheeler</option>
+          <option>Four Wheeler</option></select
+        ><br />
+        <label for="vehicleMake">Vehicle Make:</label>
+        <select id="vehicleMake" name="vehicleMake" required>
+          <option value="none" selected disabled hidden>
+            Select an Option
+          </option>
+          <option>Honda</option>
+          <option>Tata</option>
+          <option>Benz</option>
+          <option>Others</option>
+        </select>
+        <input class="submit-btn" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

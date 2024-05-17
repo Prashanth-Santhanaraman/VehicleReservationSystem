@@ -1,0 +1,13 @@
+* {
+  font-family: "Inter Tight", sans-serif;
+  background-color: rgb(114, 255, 114);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+  text-align: center;
+  color: black;
+}

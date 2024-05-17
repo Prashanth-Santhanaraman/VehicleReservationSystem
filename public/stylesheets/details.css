@@ -1,0 +1,17 @@
+* {
+  font-family: "Inter Tight", sans-serif;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 7px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh; /* This makes sure the body takes up at least the full height of the viewport */
+  margin: 0;
+}

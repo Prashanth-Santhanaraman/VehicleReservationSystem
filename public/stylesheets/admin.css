@@ -1,0 +1,18 @@
+body {
+  background-color: white;
+  font-family: "Inter Tight", sans-serif;
+}
+.forms {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: azure;
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
